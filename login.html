@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left">
+            <!-- Background image here -->
+        </div>
+        <div class="right">
+            <div class="container">
+                <h2>Login Jika Anda </h2>
+                <select name="user_type" id="">
+                    <option value="user"><a href="login.html">siswa</a></option>
+                    <option value="admin"><a href="login_admin.html">admin</a></option>
+                    <option value="admin">Guru</option>
+                  </select>
+                <form class="form" action ="index.html" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br></input>
+                    <input type="password" id="password" name="password" placeholder="Password" required><br><br></input>
+                   <input type="button"onclick="tombolLogin()" value="login"</input>
+                </form>
+               
+               
+                <div class="signup">
+                    <p>Don't have an account? <a class="link" href="">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
